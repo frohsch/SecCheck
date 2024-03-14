@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  
+//  DictionaryWordRule.swift
+//
 //
 //  Created by Minjoo Kim on 2/18/24.
 //
@@ -15,6 +15,8 @@
 open class DictionaryWordRule: PasswordRule {
 
     private let nonLowercaseCharacterSet = CharacterSet.lowercaseLetters.inverted
+    
+    public init() { }
 
     /// Evaluate password. Return false if it is passed and true if failed.
     open func evaluate(_ password: String) -> Bool {
